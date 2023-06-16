@@ -9,6 +9,9 @@
     <title>Home</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="stylesheet" href="./css/media-queries.css">
+    <link rel="stylesheet" href="./css/media-queries-medium.css">
+    <link rel="stylesheet" href="./css/media-querieslarge.css">
 </head>
 
 <body>
@@ -25,9 +28,9 @@
 
                 <div class="menu-nav-links">
                     <ul class="flex-layout menu-nav-row menu-nav-font-style-2">
-                        <li><a href="#"><img src="./assest/Vector.png" alt=""> Search</a></li>
-                        <li><a href="#"><img src="./assest/Vectorsigin.png" alt=""> Sign in</a></li>
-                        <li><a href="#"><img src="./assest/Vectorbag.png" alt=""> (0)</a></li>
+                        <li><a href="#"><img src="./assest/Vectorsearch.svg" alt=""> Search</a></li>
+                        <li><a href="#"><img src="./assest/Vectorsigin.svg" alt=""> Sign in</a></li>
+                        <li><a href="#"><img src="./assest/Vectorbag.svg" alt=""> (0)</a></li>
                     </ul>
                     <ul class="flex-layout menu-nav-row menu-nav-font-style-1">
                         <li><a href="#">Classes</a></li>
@@ -38,6 +41,9 @@
                         <li><a href="#" class="primary-btn-twsred">Find a Class</a></li>
                     </ul>
                 </div>
+                <!-- <a href="#" class="nav-toggle">
+                    <i class="fa-solid fa-bars"></i>
+                </a> -->
             </div>
         </div>
 
@@ -59,7 +65,7 @@
                     <div class="main-content-tags">
                         <ul class="flex-layout tags-btn-gap">
                             <li class="user-btn-tag btnfsptsan">
-                                <a href=""><img src="./assest/user.png" alt="" class="user-tag-img"> David William Hill
+                                <a href=""><img src="./assest/Vectorsignb.svg" alt="" class="user-tag-img"> David William Hill
                             </li></a>
 
                             <li class="genre-btn-tags btnfsptsan">Fiction</li>
@@ -72,9 +78,9 @@
                 <div class="main-content-top-right">
                     <table class="main-content-table">
                         <tr>
-                            <td class="text-dec-pt-san border-right-table">$200 <span class="membership">Member</span>
+                            <td class="text-dec-pt-san border-right-table" id="tdalontop">$200 <span class="membership">Member</span>
                             </td>
-                            <td class="text-dec-pt-san">$259 <span class="membership">Non-Member</span></td>
+                            <td class="text-dec-pt-san" id="tdalontop">$259 <span class="membership">Non-Member</span></td>
                         </tr>
                         <tr class="mc-table-footer">
                             <td colspan="2" class="mc-footer-radius"><a href="" class="mc-table-footer-font">Sign Up</a>
@@ -91,7 +97,7 @@
             <!-- Bottom section of main content -->
             <div class="main-content-bottom flex-layout">
                 <div class="main-content-card flex-layout" style="gap: 16px;">
-                    <img src="./assest/cal.png" alt="">
+                    <img src="./assest/cal.svg" alt="">
                     <div class="main-content-p-font-style-ptsan">
                         <p><b>Jan 05 - Feb 15</b> <span style="color: #DC3636;">(5 Wednesdays)</span></p>
                         <p style="color: #434343;"> 10:00am - 4:00pm (PST)</p>
@@ -99,14 +105,14 @@
                 </div>
 
                 <div class="main-content-card flex-layout vertical-border-date" style="gap: 16px;">
-                    <img src="./assest/location.png" alt="">
+                    <img src="./assest/placelocation.svg" alt="">
                     <div class="main-content-p-font-style-ptsan">
                         <p>2042 Balboa St.,</p>
                         <p> San Francisco, CA 94121</p>
                     </div>
                 </div>
                 <div class="main-content-card flex-layout vertical-border-date" style="gap: 16px;">
-                    <img src="./assest/deadline.png" alt="">
+                    <img src="./assest/watch_laterdeadline.svg" alt="">
                     <div class="main-content-p-font-style-ptsan">
                         <p style="color: #434343;"><b>Registration deadline:</b></p>
                         <p style="color: #434343;">May 07 at 10:30am (PST)</p>
@@ -128,25 +134,24 @@
                 <div class="description-section-top flex-layout">
                     <!-- -------Top left section of Description ----------------- -->
                     <div class="description-section-left">
+                        
                         <p>In order to write, one must read constantly, observe the world well, and take seriously the
                             craft of writing. During this five-week course, we will focus on the last of these, the
                             craft of writing—specifically, we will focus on three mainstays of fiction: character,
-                            dialogue, and scene.
+                            dialogue, and scene.</p>
                             <br>
-                            <br>
-                            “I think that writers often feel more comfortable writing exposition and summary than scene,
+                           <p> “I think that writers often feel more comfortable writing exposition and summary than scene,
                             perhaps because in our own lives we often feel more comfortable observing than engaging, and
                             scene is about getting our characters to engage,” says instructor Lori Ostlund. “In this
                             class we will focus on creating scenes as a way to develop characters, demonstrate changes
-                            in them, and increase tension.
+                            in them, and increase tension.</p>
+                            
                             <br>
-                            <br>
-                            “We will also spend a lot of time on dialogue, thinking about it as a way to reveal
+                            <p>“We will also spend a lot of time on dialogue, thinking about it as a way to reveal
                             character and relationships and, perhaps most important, as a way to reveal the shifting
-                            power dynamics that are at work in those relationships and which create tension.”
+                            power dynamics that are at work in those relationships and which create tension.”</p>
                             <br>
-                            <br>
-                            We will look at examples from short stories and novels and engage in in-class exercises that
+                            <p>We will look at examples from short stories and novels and engage in in-class exercises that
                             focus on these three craft building blocks. Participants will use these exercises to create
                             work at home, which we will workshop during the last two weeks of class. “My goal,” Lori
                             says, “is for us to think about these craft elements in ways that are new and generative.”
@@ -157,15 +162,15 @@
                             <h3 class="btnfsptsan">Share</h3>
                             <ul class="flex-layout ">
                                 <li>
-                                    <a href=""><img src="./assest/Facebook.png" alt="">
+                                    <a href=""><img src="./assest/facebook.svg" alt="">
                                 </li></a>
 
                                 <li>
-                                    <a href=""><img src="./assest/Twitter.png" alt=""></a>
+                                    <a href=""><img src="./assest/Twitter.svg" alt=""></a>
                                 </li>
-                                <li><a href=""><img src="./assest/Combined Shape.png" alt=""></a></li>
+                                <li><a href=""><img src="./assest/LinkedIN.svg" alt=""></a></li>
                                 <li>
-                                    <a href=""><img src="./assest/Group 112.png" alt=""></a>
+                                    <a href=""><img src="./assest/link.svg" alt=""></a>
                                 </li>
 
 
@@ -197,7 +202,7 @@
                     <!-- -------Top Right section of Description ----------------- -->
                     <div class="description-section-right">
                         <div class="profile-img">
-                            <img src="./assest/Ellipse 27.png" alt="User Profile photo">
+                            <img src="./assest/profilepic.svg" alt="User Profile photo">
                         </div>
 
                         <div class="user-bio">
@@ -223,11 +228,12 @@
 
                 <!-- -----------testimonials =-------- -->
                 <div class="description-section-bottom">
-                    <div class="arrows prev"></div>
-                    <div class="arrows next"></div>
+                
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
                     <div class="testimonials-container flex-layout">
                         <div id="inverted-comma-box">
-                            <img src="./assest/leftdoubleincoma.png" alt="" class="left-inverted-cooma-logo">
+                            <img src="./assest/leftdoubleincoma.svg" alt="" class="left-inverted-cooma-logo">
                         </div>
                         <p class="user-testimonials-review">
 
@@ -239,7 +245,7 @@
 
                         </p>
                         <div id="right-inverted-comma">
-                            <img src="./assest/rightdoubleincoma.png" alt="">
+                            <img src="./assest/rightdoubleincoma.svg" alt="">
                         </div>
 
                     </div>
@@ -290,11 +296,15 @@
                     participate in the class from wherever you'd like, whether on your living room couch or in your
                     office. Before your class meets, you'll receive an email from The Proprietary with more information
                     about Zoom and your remote class. If you have any questions about remote learning, please don't
-                    hesitate to reach out to us at <a href="mailto: hello@wisdmlabs"
-                        style="color:#00ACB4;">hello@wisdmlabs.</a>
+                    hesitate to reach out to us at <a href="mailto: hello@wisdmlabs.com"
+                        style="color:#00ACB4;">hello@wisdmlabs.com.</a>
 
-                    <a href="#" class="about-faq-links">Learn about our classes > </a>
-                    <a href="#" class="about-faq-links">Questions? See FAQ > </a>
+                        <div class="about-faq-links">
+                            <a href="#" >Learn about our classes > </a>
+                            <a href="#" >Questions? See FAQ > </a>
+                        </div>
+
+                    
                 </p>
 
             </div>
@@ -326,7 +336,7 @@
                     </div>
                     <div class="pc-card">
                         <p class="pfstyle-pccard"><span class="heading-pfstyle-pccard">On the day or after</span> The
-                            Proprietary cannot offer refunds, credits, or makeup sessions for classes a student might
+                            Proprietary <b> cannot offer refunds, credits, or makeup sessions </b> for classes a student might
                             miss.</p>
                     </div>
                 </div>
@@ -379,7 +389,7 @@
 
             <div class="social-media-icon flex-layout">
                 <img src="./assest/footertwitter.png" alt="">
-                <img src="./assest/footerfacebook.png" alt="">
+                <img src="./assest/footerfacebook.png" alt="" style="background-color: #F39B4E; border-radius: 30px;">
                 <img src="./assest/footerinsta.png" alt="">
             </div>
 

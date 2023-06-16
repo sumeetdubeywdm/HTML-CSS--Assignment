@@ -12,6 +12,7 @@ body {
 .container {
   max-width: 1100px;
   margin-inline: auto;
+  overflow: hidden;
 }
 
 .flex-layout {
@@ -87,6 +88,9 @@ nav {
   width: 104px;
 }
 
+.nav-toggle{
+  display: hidden;
+}
 /* ------------------- Navbar------------- */
 
 /* ------- --------Main Content---------------- */
@@ -285,6 +289,8 @@ table {
 
 .description-section {
   margin-top: 33px;
+  flex-wrap: wrap;
+  /* change */
 }
 
 .description-section-left {
@@ -365,7 +371,7 @@ table {
 }
 
 .description-section-bottom {
-  background-image: url(../assest/Rectangle\ 111.png);
+  background-image: url(../assest/Rectangle.svg);
   height: 264px;
   padding-inline: 85px;
   padding-top: 38px;
@@ -431,12 +437,19 @@ table {
   margin-bottom: 22px;
 }
 
-.about-faq-links {
+.about-faq-links a{
   display: inline-block;
   padding-top: 33px;
   padding-right: 66px;
   padding-bottom: 61px;
   color: #dc3636;
+
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
 }
 
 .about-classes-cancellation-policy-container hr {
@@ -545,26 +558,22 @@ button {
   padding-bottom: 17px;
 }
 
-.arrows {
-  width: 12px;
-  height: 12px;
+/* slideshow next prev key ( JS required ) */
+.prev, .next {
+  cursor: pointer;
   position: absolute;
-}
-
-.prev {
-  border-bottom: 3px solid white;
-  border-left: 3px solid white;
-  transform: rotate(45deg);
-  left: 10px;
-  margin-left: 160px;
-  margin-top: 80px;
+  margin-top: 60px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
 }
 
 .next {
-  border-bottom: 3px solid white;
-  border-left: 3px solid white;
-  transform: rotate(-135deg);
-  right: 10px;
-  margin-right: 160px;
-  margin-top: 80px;
+  right: 12%;
+  border-radius: 3px 0 0 3px;
+}
+.prev{
+  border-radius: 3px 0 0 3px;
+  left: 12%;
 }
