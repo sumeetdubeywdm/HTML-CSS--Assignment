@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./css/media-queries.css">
     <link rel="stylesheet" href="./css/media-queries-medium.css">
     <link rel="stylesheet" href="./css/media-querieslarge.css">
+    <link rel="stylesheet" href="./css/media-queries-small.css">
 </head>
 
 <body>
@@ -26,7 +27,7 @@
                     </a>
                 </div>
 
-                <div class="menu-nav-links">
+                <div class="menu-nav-links" id="menu-nav-link-toggle">
                     <ul class="flex-layout menu-nav-row menu-nav-font-style-2">
                         <li><a href="#"><img src="./assest/Vectorsearch.svg" alt=""> Search</a></li>
                         <li><a href="#"><img src="./assest/Vectorsigin.svg" alt=""> Sign in</a></li>
@@ -41,9 +42,9 @@
                         <li><a href="#" class="primary-btn-twsred">Find a Class</a></li>
                     </ul>
                 </div>
-                <!-- <a href="#" class="nav-toggle">
-                    <i class="fa-solid fa-bars"></i>
-                </a> -->
+                <a href="#" class="nav-toggle" id="nav-toggle">
+                    <i class="fa-solid fa-bars "></i>
+                </a>
             </div>
         </div>
 
@@ -96,7 +97,7 @@
 
             <!-- Bottom section of main content -->
             <div class="main-content-bottom flex-layout">
-                <div class="main-content-card flex-layout" style="gap: 16px;">
+                <div class="main-content-card flex-layout media-query-border" style="gap: 16px;">
                     <img src="./assest/cal.svg" alt="">
                     <div class="main-content-p-font-style-ptsan">
                         <p><b>Jan 05 - Feb 15</b> <span style="color: #DC3636;">(5 Wednesdays)</span></p>
@@ -229,7 +230,7 @@
                 <!-- -----------testimonials =-------- -->
                 <div class="description-section-bottom">
                 
-                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="prev" onclick="plusSlides(1)">&#10094;</a>
                     <a class="next" onclick="plusSlides(1)">&#10095;</a>
                     <div class="testimonials-container flex-layout">
                         <div id="inverted-comma-box">
@@ -400,8 +401,15 @@
 
     </footer>
 
-
+    
     <script src="https://kit.fontawesome.com/b02a89dfc2.js" crossorigin="anonymous"></script>
+    <script>
+       const toggleButton = document.getElementById('nav-toggle');
+       const navLinks = document.getElementById('menu-nav-link-toggle');
+        toggleButton.addEventListener('click',() =>{
+            navLinks.classList.toggle('active');
+        })
+        </script>
 </body>
 
 </html>

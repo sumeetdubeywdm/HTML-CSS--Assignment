@@ -6,13 +6,31 @@
 
 body {
   background-color: #ececec;
+/* overflow: hidden; */
 }
 
+
 /* ---------- Utilities classes --------- */
+
+/* temp */
+
+main{
+  overflow: hidden;
+}
+footer{
+  overflow: hidden;
+}
+
+.nav-toggle{
+  display: none;
+}
+
+
+/* temp */
 .container {
   max-width: 1100px;
   margin-inline: auto;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .flex-layout {
@@ -460,6 +478,8 @@ table {
   margin-top: 61px;
   margin-bottom: 16px;
 }
+
+/* new  */
 
 .policy-cancelation-card {
   padding-top: 36px;
